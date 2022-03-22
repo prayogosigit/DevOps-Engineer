@@ -39,9 +39,11 @@
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/8.png)
 
-10. Pilih di bagian ens33, setelah itu pada bagia IPv4 Method ubah dari yang awalnya automatic menjadi manual. Setelah itu masukan detail IP (untuk mengubah menjadi ip DHCPv4 menjadi statis)
+10. Lalu pilih di bagian ens33, dan setelah itu pada bagia IPv4 Method ubah dari yang awalnya automatic menjadi manual. Setelah itu masukan detail IP (untuk mengubah menjadi ip DHCPv4 menjadi statis)
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/99.png)
+
+
 
 
 

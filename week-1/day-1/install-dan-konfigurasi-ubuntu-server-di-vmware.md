@@ -73,6 +73,12 @@
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/77.png)
 
+16. Lalu akan muncul notifikasi untuk mengkonfirmasi semua konfigurasi yang sudah kita buat. Jika sudah langsung klik saja Continue.
+
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/999.png)
+
+
+
 
 
 

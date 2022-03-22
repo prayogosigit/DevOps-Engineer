@@ -55,6 +55,16 @@
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/33.png)
 
+13. Nah di bagian ini kita pilih Custom storage layout. Lalu klik Done.
+
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/44.png)
+
+14. Selanjutnya di local disk pilih Add GPT Partition.
+
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/55.png)
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/66.png)
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/77.png)
+
 
 
 

@@ -33,6 +33,15 @@
 
 8. Jika sudah nanti akan arahkan ke bagian installasi, disini tunggu saja sampai prosesnya selesai. ketika selesai akan muncul tampilan seperti gambar dibawah ini. Setelah itu pilih bahasa yang ingin digunakan English.
 
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/7.png)
+
+9. Pada proses saat ini bisa di skip dengan klik done
+
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/8.png)
+
+
+
+
 
 
 

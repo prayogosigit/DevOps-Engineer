@@ -27,6 +27,12 @@
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/5.png)
 
-7. Kemudian pada bagian Network Adapter pilih "NAT" kemudian close
+7. Kemudian pada bagian Network Adapter pilih "NAT" kemudian close. Lalu Finish
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/6.png)
+
+8. Jika sudah nanti akan arahkan ke bagian installasi, disini tunggu saja sampai prosesnya selesai. ketika selesai akan muncul tampilan seperti gambar dibawah ini. Setelah itu pilih bahasa yang ingin digunakan English.
+
+
+
+

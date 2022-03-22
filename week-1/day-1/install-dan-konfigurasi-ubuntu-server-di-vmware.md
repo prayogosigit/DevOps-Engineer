@@ -44,6 +44,21 @@
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/99.png)
 
 
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/10.png)
+
+
+11. Saat ini IP sudah menjadi statis
+
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/111.png)
+
+12. Lalu skip dengan klik Done.
+
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/33.png)
+
+
+
+
+
 
 
 

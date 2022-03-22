@@ -62,7 +62,15 @@
 14. Selanjutnya di local disk pilih Add GPT Partition.
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/55.png)
+
+15. Di bagian ini masukan saja size yang maksimal. Lalu klik Create
+
+
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/66.png)
+
+15. Selanjutnya tampilanya akan seperti di bawah ini. Lalu klik Done
+
+
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/77.png)
 
 

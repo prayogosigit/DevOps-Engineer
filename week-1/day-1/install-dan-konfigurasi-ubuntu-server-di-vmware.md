@@ -77,6 +77,33 @@
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/999.png)
 
+17. Untuk membuat profile kita isi nama dan pasword sesuai form yang di tampilkan
+
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/100.png)
+
+18. Lalu checklist bagian Install OpenSSH server yang nantinya berguna untuk meremote server
+
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/101.png)
+
+19. Pada tahap ini langsung saja klik done 
+
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/102.png)
+
+20. tunggu beberapa saat proses intalasi jika sudah klik Reboot Now
+
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/103.png)
+
+21. Nah jika sudah masukan ID dan pasword yang tadi sudah di daftarkan
+
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/104.png)
+
+
+
+
+
+
+
+
 
 
 

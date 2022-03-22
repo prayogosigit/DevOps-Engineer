@@ -4,5 +4,5 @@
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/11.png)
  2. Download aplikasi VMware di https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-1/assets/22.png)
-#Langkah 2
+# Langkah 2
 ## Install dan Setup VMware

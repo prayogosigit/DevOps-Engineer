@@ -15,5 +15,6 @@ Jelaskan kebutuhan yang harus ada sebelum memulai, seperti:
 
 
 # Penyelesaian
-- [Setup apache2 dan kofigurasi] setup-apache2-dan-konfigurasi.md
+- [Setup apache2 dan kofigurasi]
+- [konfigurasi-apache2-dengan-localtunel.md]
 

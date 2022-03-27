@@ -3,26 +3,27 @@
 1. Pertama-tama sama seperti sebelumnya, kita harus mendownload engine-nya terlebih dahulu. dengna mengetik
 "wget https://golang.org/dl/go1.16.5.linux-amd64.tar.gz && sudo su"
 
-a
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-3/assets/10.png)
 
 2. lalu ketik "rm -rf /usr/local/go && tar -C /usr/local -xzf go1.16.5.linux-amd64.tar.gz && exit"
 
-a
+
 
 3. Selanjutnya masukkan path go pada .bashrc dengan mengetik "sudo nano .bashrc"
 
-a
+
 
 4. masukan kode berikut "export PATH=$PATH:/usr/local/go/bin"
 
-a
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-3/assets/10.png)
 
 5. setelah itu perika versi kamu dengan mengetik "go version"
 
-a
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-3/assets/11.png)
 
 6. lalu buat file index.go dan masuk script berikut
 package main
+
 
 import "fmt"
 
@@ -32,12 +33,12 @@ func main() {
 
 6. Sekarang jalankan aplikasi go dengan menggunakan perintah berikut "go run index.go"
 
-a
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-3/assets/14.png)
 
 7. lalu build dengan perintah ""go build index.go"
 
-a
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-3/assets/15.png)
 
 8. jika sudah masukan perintah tersebut dengan mengetik "./index"
 
-a
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-3/assets/16.png)

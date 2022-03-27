@@ -7,7 +7,7 @@
 
 2. lalu ketik "rm -rf /usr/local/go && tar -C /usr/local -xzf go1.16.5.linux-amd64.tar.gz && exit"
 
-
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-3/assets/10.png)
 
 3. Selanjutnya masukkan path go pada .bashrc dengan mengetik "sudo nano .bashrc"
 
@@ -15,7 +15,7 @@
 
 4. masukan kode berikut "export PATH=$PATH:/usr/local/go/bin"
 
-![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-3/assets/10.png)
+
 
 5. setelah itu perika versi kamu dengan mengetik "go version"
 

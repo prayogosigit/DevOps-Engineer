@@ -4,7 +4,7 @@
 
 
 
-2. pastikan folder sudah masuk ke direktori yang ingin di push lalu push dengan ketik git init
+2. pastikan folder sudah masuk ke direktori yang ingin di push lalu di inisiasi dengan ketik git init
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-4/assets/8.png)
 

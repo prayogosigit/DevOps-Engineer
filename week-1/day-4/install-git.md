@@ -22,4 +22,4 @@
 
 7. lalu ketikan pertintah ssh -T git@github.com
 
-![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-4/assets/6.png)
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-4/assets/7.png)

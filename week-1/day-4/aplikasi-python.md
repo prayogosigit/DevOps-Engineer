@@ -33,3 +33,16 @@
 
 
 9. lalu masuk ke branch staging dengan mengetik "git checkout staging"
+
+
+
+10. lalu push dengan ketik perintah git push origin staging
+
+
+
+
+11. lalu masuk ke branch staging dengan mengetik "git checkout master"
+ 
+ 
+ 
+12. lalu push dengan ketik perintah git push origin master

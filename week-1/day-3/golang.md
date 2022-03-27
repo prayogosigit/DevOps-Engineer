@@ -22,6 +22,8 @@
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-3/assets/11.png)
 
 6. lalu buat file index.go dan masuk script berikut
+
+
 package main
 
 
@@ -31,14 +33,16 @@ func main() {
     fmt.Println("Hello World!")
 }
 
-6. Sekarang jalankan aplikasi go dengan menggunakan perintah berikut "go run index.go"
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-3/assets/17.png)
+
+7. Sekarang jalankan aplikasi go dengan menggunakan perintah berikut "go run index.go"
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-3/assets/14.png)
 
-7. lalu build dengan perintah ""go build index.go"
+8. lalu build dengan perintah ""go build index.go"
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-3/assets/15.png)
 
-8. jika sudah masukan perintah tersebut dengan mengetik "./index"
+9. jika sudah masukan perintah tersebut dengan mengetik "./index"
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-3/assets/16.png)

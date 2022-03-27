@@ -18,7 +18,7 @@
 
 5. masuk ke branch development dengan ketik "git checkout development"
 
-
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-4/assets/34.png)
 
 6. lalu ketik perintah git add . untuk add file
 

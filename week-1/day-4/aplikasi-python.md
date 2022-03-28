@@ -41,7 +41,7 @@
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-4/assets/33.png)
 
 
-11. lalu masuk ke branch staging dengan mengetik "git checkout master"
+11. lalu masuk ke branch master dengan mengetik "git checkout master"
  
  ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-4/assets/31.png)
  

@@ -16,7 +16,7 @@
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-4/assets/10.png)
 
-5. masuk ke branch development dengan ketik "git checkout development"
+5. masuk ke branch staging dengan ketik "git checkout staging"
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-4/assets/11.png)
 

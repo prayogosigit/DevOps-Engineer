@@ -32,6 +32,6 @@
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-4/assets/14.png)
 
-9. lalu masuk ke branch staging dengan mengetik "git checkout staging"
+9. lalu masuk ke branch development dengan mengetik "git checkout development"
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-4/assets/15.png)

@@ -16,6 +16,10 @@ sudo apt update;sudo apt upgrade
 
 chmod u+x update.sh
 
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-6/assets/6.png)
+
+-- maka akan jadi seperti ini statusnya
+
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-6/assets/3.png)
 
 4. lalu jalankan program terserbut dengan cara mengetik perintah ./update.sh

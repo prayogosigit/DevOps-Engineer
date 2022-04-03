@@ -2,7 +2,7 @@
 
 1. buatlah file yang ber extension .sh
 
-a
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-6/assets/1.png)
 
 2. lalu masukan script 
 
@@ -10,19 +10,19 @@ a
 
 sudo apt update;sudo apt upgrade
 
-a
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-6/assets/2.png)
 
 3. setelah itu buat lah file tersebut agar bisa di execute dengan cara
 
 chmod u+x update.sh
 
-a
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-6/assets/3.png)
 
 4. lalu jalankan program terserbut dengan cara mengetik perintah ./update.sh
 
-a
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-6/assets/4.png)
 
 5. maka akan jalan seperti ini
 
-a
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-6/assets/5.png)
 

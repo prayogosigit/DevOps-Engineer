@@ -55,7 +55,7 @@ sudo nano /etc/hosts
 Sekarang kita coba untuk menjalankan aplikasi dumbflix yang sudah pernah kita pakai sebelumnya.
 Untuk menjalankan aplikasi dumbflix kalian dapat mengikuti langkah-langkah berikut.
 
-![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-7/assets/10.png)
+
 
 -- git clone https://github.com/dumbwaysdev/dumbflix-frontend.git
 
@@ -63,10 +63,11 @@ Untuk menjalankan aplikasi dumbflix kalian dapat mengikuti langkah-langkah berik
 
 -- npm install 
 
-![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-7/assets/11.png)
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-7/assets/10.png)
 
 -- npm start
 
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-7/assets/11.png)
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-7/assets/12.png)
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-7/assets/13.png)
 

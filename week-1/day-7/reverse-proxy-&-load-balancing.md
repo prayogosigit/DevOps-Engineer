@@ -49,7 +49,6 @@ sudo nano /etc/hosts
 
 8. Jika sudah sekarang coba buka web browser kalian setelah itu coba akses nama domain kalian.
 
-![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-7/assets/9.png)
 
 9. Jika kita lihat disini adalah kita mendapatkan 502 Bad Gateway kenapa? karena kita belum menjalankan aplikasi kita.
 Sekarang kita coba untuk menjalankan aplikasi dumbflix yang sudah pernah kita pakai sebelumnya.
@@ -58,6 +57,8 @@ Untuk menjalankan aplikasi dumbflix kalian dapat mengikuti langkah-langkah berik
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-7/assets/88.png)
 
 -- git clone https://github.com/dumbwaysdev/dumbflix-frontend.git
+
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-1/day-7/assets/9.png)
 
 -- cd dumbflix-frontend
 

@@ -88,7 +88,6 @@ a
 3. nah pada bagian seperti diatas kalian masukan ip aplikasi kalian semuanya yang mau di load balancingkan
 lalu pada bagian domain kalian masukan sesuka kalian ingin menjadi doamin apa asal ber extensin .XYZ
 
-a
 
 4. Jika sudah sekarang kita coba cek apakah konfigurasi yang sudah kita buat tadi itu error atau tidak. dengan mengetik
 

@@ -38,23 +38,29 @@ sudo mysql_secure_installation
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d2.png)
 
  * Lalu kita masuk ke dalam database sql dengan menggunakan perintah tersebut
-'''sh
+
+'''shsh
 mysql -u root -p
 '''
+
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d3.png)
 
 * Langkah selanjutnya kita membuat user baru dengan cara 
+
 '''sh
 CREATE USER 'sigit'@'%' IDENTIFIED BY 'Sotoy123';
 '''
+
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d4.png)
 
 `keterangan di atas menunjukan sigit=username | Sotoy123=password`
 
  * Lalu selanjutnya membuat database dengan cara 
+
 '''sh
 CREATE DATABASE wasyhub;
 '''
+
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d5.png)
 
 'keterangan di atas kita membuat database dengan nama wayshub'
@@ -66,17 +72,21 @@ SHOW DATABASES;
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d6.png)
 
 untuk melihat isi database 
+
 '''sh
 SHOW TABLES;
 '''
 
  * Selanjutnya untuk membuat database agar bisa di akses dengan user sigit ketik perintah
+
 '''sh
 GRANT ALL PRIVILAGES ON wayshub.* TO 'sigit'@'%';
 '''
+
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d7.png)
 
 lalu
+
 '''sh
 FLUSH PRIVILEGES;
 '''

@@ -10,7 +10,7 @@ git clone https://github.com/rioprayogo/wayshub-frontend.git
 ```sh
 git clone https://github.com/rioprayogo/wayshub-backend.git
 ```
-aaa1
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/1.png)
 
 * Instal
 

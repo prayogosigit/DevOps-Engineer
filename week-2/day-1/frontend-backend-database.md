@@ -80,9 +80,10 @@ lalu
 '''sh
 FLUSH PRIVILEGES;
 '''
-AAD8
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d8.png)
 
  * Setelah semua terbuat saatya kita login menggunkan user baru yang tadi di buat, dengan cara 
+
 '''sh
 mysql -u sigit -p
 '''

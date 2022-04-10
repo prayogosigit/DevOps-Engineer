@@ -26,30 +26,30 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/a3.png)
  
  * Jika sudah masuk ke server Database untuk setting database dengan menggunakan
-'''sh
+```sh
 sudo apt install mysql-server
-'''
+```
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d1.png)
 
  * Selanjutnya lakukan konfigursi untuk membuat server agar bisa menggunakan pasword, kekuatan password dan permision lainnya. seperti Permintaan apakan bisa remote server? apakah bisa untuk menghapus user test anoymouse?dlldengan cara
-'''sh
+```sh
 sudo mysql_secure_installation
-'''
+```
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d2.png)
 
  * Lalu kita masuk ke dalam database sql dengan menggunakan perintah tersebut
 
-'''shsh
+```sh
 mysql -u root -p
-'''
+```
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d3.png)
 
 * Langkah selanjutnya kita membuat user baru dengan cara 
 
-'''sh
+```sh
 CREATE USER 'sigit'@'%' IDENTIFIED BY 'Sotoy123';
-'''
+```
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d4.png)
 
@@ -57,46 +57,46 @@ CREATE USER 'sigit'@'%' IDENTIFIED BY 'Sotoy123';
 
  * Lalu selanjutnya membuat database dengan cara 
 
-'''sh
+```sh
 CREATE DATABASE wasyhub;
-'''
+```
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d5.png)
 
 'keterangan di atas kita membuat database dengan nama wayshub'
 
  * Untuk memastikan database berhasil di buat kita bisa memberikan perintah
-'''sh
+```sh
 SHOW DATABASES;
-'''
+```
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d6.png)
 
 untuk melihat isi database 
 
-'''sh
+```sh
 SHOW TABLES;
-'''
+```
 
  * Selanjutnya untuk membuat database agar bisa di akses dengan user sigit ketik perintah
 
-'''sh
+```sh
 GRANT ALL PRIVILAGES ON wayshub.* TO 'sigit'@'%';
-'''
+```
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d7.png)
 
 lalu
 
-'''sh
+```sh
 FLUSH PRIVILEGES;
-'''
+```
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d8.png)
 
  * Setelah semua terbuat saatya kita login menggunkan user baru yang tadi di buat, dengan cara 
 
-'''sh
+```sh
 mysql -u sigit -p
-'''
+```
 lalu lakukan `SHOW DATABASES;` dan `use wayshub` untuk menggunakan database wayshub
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/d9.png)
@@ -147,8 +147,8 @@ npm install pm2
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/a21.png)
 
 * Terakhir untuk menjalan kan aplikasi pada kedua direktori frontend dan backend meggunakan
-'''sh
+```sh
 pm2 start ecosystem.config.js
-'''
+```
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/a24.png)
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-1/assets/a25.png)

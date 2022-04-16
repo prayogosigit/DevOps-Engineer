@@ -1,5 +1,11 @@
 # Aplikasi with docker
 
+## APA ITU DOCKER?
+`Docker adalah layanan yang menyediakan kemampuan untuk mengemas dan menjalankan sebuah aplikasi dalam sebuah lingkungan terisolasi yang disebut dengan container. Dengan adanya isolasi dan keamanan yang memadai memungkinkan kamu untuk menjalankan banyak container di waktu yang bersamaan pada host tertentu.`
+
+## APA SIH KEGUNAAN DOCKER?
+`Untk membuat kontainer dan menyediakan sekumpulan perintah sederhana yang dapat digunakan untuk membuat, memulai, atau menghentikan kontainer.`
+
 1. Instal docker & docker-compose di server aplikasi, dengan cara 
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/a1.png)

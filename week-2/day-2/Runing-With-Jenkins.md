@@ -79,53 +79,9 @@
           6. lalu save
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/j11.png)
 
-15. tahap selanjutnya membuat file pipeline di direktori Frontend yang bernana ( Jenkinsfile ). Yang isinya :`
-def secret = 'Server'
-def server = 'app-sigit1@103.172.205.236'
-def directory = 'Frontend-Wayshub'
-def branch = 'main'
+15. tahap selanjutnya membuat file pipeline di direktori Frontend yang bernana ( Jenkinsfile ). Yang isinya :
 
-pipeline{
-    agent any
-    stages{
-        stage ('docker delete & git pull'){
-            steps{
-                sshagent([secret]) {
-                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
-                    cd ${directory}
-                    docker-compose down
-                    docker system prune -f
-                    git pull origin ${branch}
-                    exit
-                    EOF"""
-                }
-            }
-        }
-        stage ('docker compose'){
-            steps{
-                sshagent([secret]) {
-                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
-                    cd ${directory}
-                    docker build -t sigit26/ways-fe:2.0 .
-                    exit
-                    EOF"""
-                }
-            }
-        }
-        stage ('docker up'){
-            steps{
-                sshagent([secret]) {
-                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
-                    cd ${directory}
-                    docker-compose up -d
-                    exit
-                    EOF"""
-                }
-            }
-        }
-    }
-}
-`
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/j12.png)
 
 16. langkah selanjutnya push semua file yg ada di Direktori Frontend-Wayshub
 17. setelah done coba buat update pada github repo tsb.

@@ -77,6 +77,7 @@
           4. lalumasukan dari url jenkins yg di ikuti /github-webhook/
           5. ( https://jenkins.sigit.studentdumbways.my.id/github-webhook/ )
           6. lalu save
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/j11.png)
 
 15. tahap selanjutnya membuat file pipeline di direktori Frontend yang bernana ( Jenkinsfile ). Yang isinya :`
 def secret = 'Server'

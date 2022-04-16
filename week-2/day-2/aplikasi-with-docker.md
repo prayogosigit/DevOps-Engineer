@@ -6,8 +6,8 @@
 
 
 2. Clone aplikasi backend dan frontend
-3. buat frontend mengenali backend ( `scr/config/api.js`) tambahakan ip backend
-4. install mysql di dalam docker ( docker pull mysql )
+3. buat frontend mengenali backend ( `src/config/api.js`) tambahakan ip backend
+4. install mysql di dalam docker`docker pull mysql` 
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/a2.png)
 

@@ -1,3 +1,5 @@
+# Aplikasi with docker
+
 1. Instal docker & docker-compose di server aplikasi, dengan cara 
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/a1.png)

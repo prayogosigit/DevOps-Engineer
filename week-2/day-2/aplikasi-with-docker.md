@@ -6,6 +6,8 @@
 ## APA SIH KEGUNAAN DOCKER?
 `Untk membuat kontainer dan menyediakan sekumpulan perintah sederhana yang dapat digunakan untuk membuat, memulai, atau menghentikan kontainer.`
 
+### Langkah 1
+
 1. Instal docker & docker-compose di server aplikasi, dengan cara 
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/a1.png)

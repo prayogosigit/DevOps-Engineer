@@ -139,5 +139,7 @@ services:
 5. lalu pilih angka 2 untuk redirect otomatis
 6. setelah coba masukan domain di web browser tadda bisa
 7. lakukan untuk frontend sudo certbot --nginx -d front.sigit.studentdumbways.my.id
+
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/a13.png)
+
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/a14.png)

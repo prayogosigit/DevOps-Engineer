@@ -1,0 +1,129 @@
+1. install jenkins. dengan cara 
+       
+       1. sudo apt install openjdk-11-jdk
+       2. wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+       3. sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+       4. sudo apt update
+       5. sudo apt install jenkins
+      
+2. Konfigurasi DNS. (buat sub domain untuk jenkin)
+
+j1
+
+3. masuk ke server nginx
+
+4. lakukan reverse proxy
+
+j2
+
+5. restart nginx
+
+6. Selanjutnya ubah domain http menjadi https dengan cara:
+        
+        1. ( sudo certbot --nginx -d jenkins.sigit.studentdumbways.my.id )
+        2. lalu pilih 2 untk install secaara otomatis direct
+
+7. jika sudah masuk ke domain jenkins.sigit.studentdumbways.my.id
+
+j3
+
+8. pada saat diawal kita di minta untuk memasukan key yg terdapat di lokasi penginstallan jenkiins
+
+9. Selanjutnya membuat username dan password untuk login jenkins
+
+10. Tahap selanjutnya penginstallan secara otomatis untuk yg di perlukan (pilih saja suggest installaiton)
+
+j4
+j5
+
+11. jika sudah masuk ke dashbord install plugin dlu yaitu ( ssh agent ) 
+
+j6
+
+12. nah jika sudah finish tahaap selanjutnya membuat credensial terlebih dahulu. dengan cara 
+         
+         1. klik manage jenkins
+         2. klik manage credensial
+         3. di bawah tulisan global klik tanda panah lalu pilih add
+         4. lalu isi username dengan ( Server )
+         5. lalu id masukan dengan nama server aplikasi ( app-sigit1)
+         6. lalu di bagian private key masukan dari rsa_id server aplikasi
+         7. jangan lupa rsa_id.pub nya di copy ke autorize-keysnya
+ j7
+ j8
+
+13. Selanjutnya membuat job dengan cara
+         
+         1. pilih new item 
+         2. nah beri nama 
+         3. lalu pilih pipeline
+         4. padah kolom Build Trigger centang bagian ( Github hook triger )
+         5. pada kolom pipleline pilih ( Pipeline script for SCM )
+         6. pada kolom SCM pilih ( Git )
+         7. Selanjutnya masukan repository URL nya dengan http dri repo frontend
+         8.  lalu masukan credential yang tadi kita buat yaitu ( Server )
+         9.  lalu pilih branchnya "main" ya karna reporsitorynya berada di branch main
+         10. lalu pilih apply dan save
+ j9
+ j10
+ 
+
+14. Selanjutnya kita masuk ke github untuk mengaktifkan webhooknya dengan cara:
+          
+          1. masuk ke repository tersebut (Frontend- Wayshub) pilih setting
+          2. pilih webhook
+          3. lalu klik add webhook
+          4. lalumasukan dari url jenkins yg di ikuti /github-webhook/
+          5. ( https://jenkins.sigit.studentdumbways.my.id/github-webhook/ )
+          6. lalu save
+
+15. tahap selanjutnya membuat file pipeline di direktori Frontend yang bernana ( Jenkinsfile ). Yang isinya :`
+def secret = 'Server'
+def server = 'app-sigit1@103.172.205.236'
+def directory = 'Frontend-Wayshub'
+def branch = 'main'
+
+pipeline{
+    agent any
+    stages{
+        stage ('docker delete & git pull'){
+            steps{
+                sshagent([secret]) {
+                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker-compose down
+                    docker system prune -f
+                    git pull origin ${branch}
+                    exit
+                    EOF"""
+                }
+            }
+        }
+        stage ('docker compose'){
+            steps{
+                sshagent([secret]) {
+                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker build -t sigit26/ways-fe:2.0 .
+                    exit
+                    EOF"""
+                }
+            }
+        }
+        stage ('docker up'){
+            steps{
+                sshagent([secret]) {
+                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker-compose up -d
+                    exit
+                    EOF"""
+                }
+            }
+        }
+    }
+}
+`
+
+16. langkah selanjutnya push semua file yg ada di Direktori Frontend-Wayshub
+17. setelah done coba buat update pada github repo tsb.

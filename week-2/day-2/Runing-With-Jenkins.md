@@ -8,13 +8,13 @@
       
 2. Konfigurasi DNS. (buat sub domain untuk jenkin)
 
-j1
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/j1.png)
 
 3. masuk ke server nginx
 
 4. lakukan reverse proxy
 
-j2
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/j2.png)
 
 5. restart nginx
 
@@ -25,7 +25,7 @@ j2
 
 7. jika sudah masuk ke domain jenkins.sigit.studentdumbways.my.id
 
-j3
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/j3.png)
 
 8. pada saat diawal kita di minta untuk memasukan key yg terdapat di lokasi penginstallan jenkiins
 
@@ -33,12 +33,13 @@ j3
 
 10. Tahap selanjutnya penginstallan secara otomatis untuk yg di perlukan (pilih saja suggest installaiton)
 
-j4
-j5
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/j4.png)
 
-11. jika sudah masuk ke dashbord install plugin dlu yaitu ( ssh agent ) 
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/j5.png)
 
-j6
+11. jika sudah masuk ke dashbord install plugin dlu yaitu ( `ssh agent` ) 
+
+![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/j6.png)
 
 12. nah jika sudah finish tahaap selanjutnya membuat credensial terlebih dahulu. dengan cara 
          
@@ -49,8 +50,8 @@ j6
          5. lalu id masukan dengan nama server aplikasi ( app-sigit1)
          6. lalu di bagian private key masukan dari rsa_id server aplikasi
          7. jangan lupa rsa_id.pub nya di copy ke autorize-keysnya
- j7
- j8
+ ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/j7.png)
+ ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/j8.png)
 
 13. Selanjutnya membuat job dengan cara
          
@@ -64,8 +65,8 @@ j6
          8.  lalu masukan credential yang tadi kita buat yaitu ( Server )
          9.  lalu pilih branchnya "main" ya karna reporsitorynya berada di branch main
          10. lalu pilih apply dan save
- j9
- j10
+ ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/j9.png)
+ ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/j10.png)
  
 
 14. Selanjutnya kita masuk ke github untuk mengaktifkan webhooknya dengan cara:

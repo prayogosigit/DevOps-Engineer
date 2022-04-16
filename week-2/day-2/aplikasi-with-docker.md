@@ -103,7 +103,7 @@ CARA 2:
 14. Langkah selanjutnya push images backend ke docker hub dengan cara
        
         1. login docker (masukan username dan password) usernameny =sigit26
-        2. docker tag sigit/ways-be :2.0 sigit26/ways-be:2.0
+        2. docker tag sigit/ways-be:2.0 sigit26/ways-be:2.0
         3. docker push sigit26/ways-be:2.0
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/day-2/assets/a10.png)
 

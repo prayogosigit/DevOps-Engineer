@@ -45,7 +45,7 @@ timeout = 60
 
 # Script monitoring on top docker
 
-- hosts: monitoring
+'- hosts: monitoring
   become: true
   gather_facts: yes
   tasks:
@@ -59,7 +59,7 @@ timeout = 60
     - name: "install prometheus"
       command: "docker run -d --name=prometheus -p 9090:9090 -v /home/sigit/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus"
     - name: "install grafana"
-      command: "docker run -d --name=grafana -p 3000:3000 grafana/grafana"
+      command: "docker run -d --name=grafana -p 3000:3000 grafana/grafana"'
       
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/final-task/assets/a2.png)
@@ -70,12 +70,14 @@ timeout = 60
 8. membuat file bernama file node-exporter.yml yg nanti akan di gunakan untuk install node-exporter di semua server
 
 # Node exporter on top docker
-- hosts: gateway
-  become: true
-  gather_facts: yes
-  tasks:
-    - name: "install node exporter"
-      command: "docker run -d --name=node-exporter --net=\"host\" --pid=\"host\" -v \"/:/host:ro,rslave\" prom/node-exporter:latest --path.rootfs=/host"
+Dengan cara 
+
+     - hosts: gateway
+       become: true
+       gather_facts: yes
+        tasks:
+          - name: "install node exporter"
+            command: "docker run -d --name=node-exporter --net=\"host\" --pid=\"host\" -v \"/:/host:ro,rslave\" prom/node-exporter:latest --path.rootfs=/host"
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/final-task/assets/a3.png)
 
@@ -92,9 +94,11 @@ timeout = 60
 # Cara  install docker di ansible
 1. buat file bernama docker.yml
 2. lalu masukan script
-"- hosts: all
-  become: yes
-  tasks:
+
+
+       - hosts: all
+         become: yes
+           tasks:
           - name: 'update'
             apt:
              update_cache: yes
@@ -135,7 +139,7 @@ timeout = 60
 
           - name: 'setup docker command without sudo'
             shell: sudo usermod -aG docker sigit
-"
+
 3. runing dengan ansible-playbook docker.yml
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/final-task/assets/a6.png)
@@ -143,15 +147,15 @@ timeout = 60
 # Cara install jenkins with ansible on top docker
 1. buat file bernama jenkins.yml
 2. masukan script
-
-" - hosts: jenkins
+ 
+  - hosts: jenkins
   become: true
   gather_facts: yes
   tasks:
     - name: "run container jenkins"
       command: "docker run -u 0 --name jenkins -p 8080:8080 -p 50000:50000 -d --restart always -v /home/sigit/jenkins_home:/var/jenkins_home jenkins/jenkins"
 
-""
+
 3. runing dengan ansible-playbook jenkins.yml
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/final-task/assets/a7.png)
@@ -161,14 +165,14 @@ timeout = 60
 1. buat file bernama postgre.yml
 2. masukan script 
 
-"
- - hosts: app
-  become: true
-  gather_facts: yes
-  tasks:
-    - name: "postgresql with docker"
-      command: docker run --name postgresql -e POSTGRES_USER=sigit -e POSTGRES_DB=dumbflix -e POSTGRES_PASSWORD=Sotoy123 -p 5432:5432 -v /home/sigit/postgres:/var/lib/postgresql/data -d postgres
-"
+
+        - hosts: app
+          become: true
+          gather_facts: yes
+            tasks:
+                   - name: "postgresql with docker"
+                     command: docker run --name postgresql -e POSTGRES_USER=sigit -e POSTGRES_DB=dumbflix -e POSTGRES_PASSWORD=Sotoy123 -p 5432:5432 -v /home/sigit/postgres:/var/lib/postgresql/data -d postgres
+
 3. jalankan dengan ansible-playbook postgre.yml
 
 
@@ -184,10 +188,10 @@ timeout = 60
 5. jika sudah muncul token copy token tersebut lalu nanti paste di script create.user.yml
 6. masukan script
 
-"
-- hosts: all
-  become: yes
-  tasks:
+
+       -hosts: all
+        become: yes
+        tasks:
         - name: 'create user'
           user:
                name: sigit

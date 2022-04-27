@@ -83,7 +83,7 @@ Dengan cara
 
 9. jika semua sudah lihat node-exporter di port 9100
 
-10. lalu jika sudah buka ip main-sigit di port 9090 untuk melihat prometheus
+10. lalu jika sudah buka ip monitorinf di port 9090 untuk melihat prometheus
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/final-task/assets/a4.png)
 

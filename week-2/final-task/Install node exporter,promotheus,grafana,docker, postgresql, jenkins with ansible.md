@@ -1,6 +1,8 @@
-1. install ansible
+# PENGINSTALLAN SEMUA APLIKASI WITH ANSIBLE
 
-2. membuat file bernama Inventory
+1. Install ansible
+
+2. Membuat file bernama Inventory
 
 
 [all]

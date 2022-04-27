@@ -5,37 +5,37 @@
 2. Membuat file bernama Inventory
 
 
-[all]
-103.183.75.150 ansible_user=sigit #monitoring
-103.172.205.236 ansible_user=sigit #app
-103.183.75.217 ansible_user=sigit
-103.179.57.187 ansible_user=sigit
+        [all]
+        103.183.75.150 ansible_user=sigit #monitoring
+        103.172.205.236 ansible_user=sigit #app
+        103.183.75.217 ansible_user=sigit
+        103.179.57.187 ansible_user=sigit
 
 
-[app]
-103.172.205.236 ansible_user=app-sigit
+        [app]
+        103.172.205.236 ansible_user=app-sigit
 
 
-[monitoring]
-103.183.75.150 ansible_user=monitoring-sigit
+        [monitoring]
+        103.183.75.150 ansible_user=monitoring-sigit
 
-[gateway]
-103.183.75.217 ansible_user=sigit
+        [gateway]
+        103.183.75.217 ansible_user=sigit
 
-[jenkins]
-103.179.57.187
+        [jenkins]
+        103.179.57.187
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/final-task/assets/a1.png)
 
 3. membuat file keypem yang berisi id_rsa.pub 
 4. membuat file ansible.cfg
 
-[defaults]
-inventory = Inventory
-private_key_file = key.pem
-command_warnings = false
-#host_key_checking = false
-timeout = 60
+       [defaults]
+       inventory = Inventory
+       private_key_file = key.pem
+       command_warnings = false
+       #host_key_checking = false
+       timeout = 60
 
 5. membuat file docker.yml yang berguna untuk install di semua server yang ada di inventory
 
@@ -45,21 +45,21 @@ timeout = 60
 
 # Script monitoring on top docker
 
-'- hosts: monitoring
-  become: true
-  gather_facts: yes
-  tasks:
-    - name: "copy configuration prometheus.yml"
-      copy:
-        src: files/
-        dest: /home/sigit/prometheus/
-        owner: sigit
-        group: sudo
-        mode: 0664
-    - name: "install prometheus"
-      command: "docker run -d --name=prometheus -p 9090:9090 -v /home/sigit/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus"
-    - name: "install grafana"
-      command: "docker run -d --name=grafana -p 3000:3000 grafana/grafana"'
+     - hosts: monitoring
+       become: true
+       gather_facts: yes
+       tasks:
+         - name: "copy configuration prometheus.yml"
+             copy:
+                  src: files/
+                  dest: /home/sigit/prometheus/
+                  owner: sigit
+                  group: sudo
+                  mode: 0664
+         - name: "install prometheus"
+           command: "docker run -d --name=prometheus -p 9090:9090 -v /home/sigit/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus"
+         - name: "install grafana"
+           command: "docker run -d --name=grafana -p 3000:3000 grafana/grafana"'
       
 
 ![logo](https://github.com/prayogosigit/DevOps-Engineer/blob/main/week-2/final-task/assets/a2.png)
